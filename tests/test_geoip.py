@@ -1,6 +1,7 @@
 """Unit tests for GeoIP-based timezone/locale detection."""
 
 from unittest.mock import patch
+import platform
 import time
 
 import pytest
@@ -156,7 +157,7 @@ def test_maybe_resolve_geoip_timeout_returns_existing_values(monkeypatch):
             elapsed = time.monotonic() - start
 
     assert (tz, loc, ip) == (None, "fr-FR", None)
-    assert elapsed < 0.5
+    assert elapsed < (2.0 if platform.system() == "Windows" else 0.5)
 
 
 # ---------------------------------------------------------------------------

@@ -94,6 +94,8 @@ def get_platform_tag() -> str:
     """Return the platform tag for binary download (e.g. 'linux-x64', 'darwin-arm64')."""
     system = platform.system()
     machine = platform.machine()
+    if system == "Windows" and not machine:
+        machine = "AMD64" if platform.architecture()[0] == "64bit" else "x86"
     tag = SUPPORTED_PLATFORMS.get((system, machine))
     if tag is None:
         raise RuntimeError(

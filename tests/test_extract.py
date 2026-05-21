@@ -185,6 +185,7 @@ class TestPermissions:
         binary.chmod(0o755)
         assert _is_executable(binary)
 
+    @pytest.mark.skipif(platform.system() == "Windows", reason="chmod not applicable on Windows")
     def test_is_executable_false(self, tmp_path):
         binary = tmp_path / "chrome"
         binary.write_bytes(b"binary")

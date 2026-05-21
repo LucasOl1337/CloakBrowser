@@ -65,7 +65,7 @@ describe("config", () => {
     const url = getDownloadUrl();
     expect(url).toContain(getChromiumVersion());
     expect(url).toContain("cloakbrowser-");
-    expect(url).toContain(".tar.gz");
+    expect(url).toContain(getArchiveExt());
     expect(url).toContain("cloakbrowser.dev");
   });
 });

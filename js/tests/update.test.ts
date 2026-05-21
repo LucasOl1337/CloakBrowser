@@ -4,6 +4,7 @@ import {
   getChromiumVersion,
   getDownloadUrl,
   getEffectiveVersion,
+  getArchiveExt,
   getPlatformTag,
   parseVersion,
   versionNewer,
@@ -68,7 +69,7 @@ describe("download URL", () => {
     const url = getDownloadUrl();
     expect(url).toContain("cloakbrowser.dev");
     expect(url).toContain(`chromium-v${getChromiumVersion()}`);
-    expect(url.endsWith(".tar.gz")).toBe(true);
+    expect(url.endsWith(getArchiveExt())).toBe(true);
   });
 
   it("accepts custom version", () => {
@@ -83,10 +84,12 @@ describe("download URL", () => {
 });
 
 describe("latest version (platform-aware)", () => {
-  const platformTarball = `cloakbrowser-${getPlatformTag()}.tar.gz`;
+  function archiveExtFor(platform: string) {
+    return platform.startsWith("windows-") ? ".zip" : ".tar.gz";
+  }
 
   function makeAssets(platforms: string[]) {
-    return platforms.map((p) => ({ name: `cloakbrowser-${p}.tar.gz` }));
+    return platforms.map((p) => ({ name: `cloakbrowser-${p}${archiveExtFor(p)}` }));
   }
 
   function mockFetch(releases: Array<Record<string, unknown>>) {

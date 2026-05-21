@@ -13,6 +13,7 @@ from cloakbrowser.config import (
     CHROMIUM_VERSION,
     _version_newer,
     _version_tuple,
+    get_archive_ext,
     get_chromium_version,
     get_download_url,
     get_effective_version,
@@ -74,7 +75,7 @@ class TestDownloadUrl:
         url = get_download_url()
         assert "cloakbrowser.dev" in url
         assert f"chromium-v{get_chromium_version()}" in url
-        assert url.endswith(".tar.gz")
+        assert url.endswith(get_archive_ext())
 
     def test_custom_version_url(self):
         url = get_download_url("145.0.7718.0")
@@ -161,10 +162,10 @@ class TestGetLatestVersion:
 
     def _make_assets(self, platforms: list[str]) -> list[dict]:
         """Helper to build asset list from platform tags."""
-        return [{"name": f"cloakbrowser-{p}.tar.gz"} for p in platforms]
+        return [{"name": f"cloakbrowser-{p}{'.zip' if p.startswith('windows-') else '.tar.gz'}"} for p in platforms]
 
     def _platform_tarball(self) -> str:
-        return f"cloakbrowser-{get_platform_tag()}.tar.gz"
+        return f"cloakbrowser-{get_platform_tag()}{get_archive_ext()}"
 
     def test_parses_chromium_tag_with_platform_asset(self):
         mock_response = MagicMock()
