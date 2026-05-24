@@ -73,3 +73,6 @@ captures
 .dolt/
 *.db
 .beads-credential-key
+
+# Safe-commit local browser profiles
+profiles/
