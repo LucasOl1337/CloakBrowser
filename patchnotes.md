@@ -1,45 +1,38 @@
-# Patch Notes — CloakBrowser
+﻿# Patchnotes — PC vs GitHub
 
-**Data:** 2026-05-25  
-**Estado local:** docs atualizados, código sincronizado  
-**Branch:** `main`  
-**Origin (backup):** `https://github.com/LucasOl1337/CloakBrowser.git`  
-**Upstream oficial:** `https://github.com/CloakHQ/CloakBrowser.git`
+Generated: 2026-05-25 10:15:43
+Repository: C:\Users\user\Desktop\CloakBrowser
+Branch: main
+Upstream: origin/main
+Push remote: origin
 
----
+## Sync status
+- Local HEAD: d240070a3c7d6ca88b94e48ccddf71b387a44b9c
+- Remote origin/main: d240070a3c7d6ca88b94e48ccddf71b387a44b9c
+- Ahead of upstream: 0
+- Behind upstream: 0
+- Working tree state: clean
 
-## Resumo
+## Commits in last 24 hours (local)
+d240070 2026-05-25+(docs) safe commit
+02c08fd 2026-05-24+(untracked) safe commit
+d4dcb69 2026-05-24+(docs) patchnotes safe commit
 
-Repositório **sincronizado** com GitHub pessoal. Alterações pendentes limitadas a documentação (`patchnotes.md`, `changelog.md`). Upstream CloakHQ avançou com novas branches e commits em `main`.
+## Pending local changes (porcelain)
+(clean)
 
----
+## Diff stat (unstaged)
+(none)
 
-## Comparação PC vs GitHub
+## Untracked files
+(none)
 
-| Aspecto | PC (local) | GitHub (`origin/main`) |
-|---------|------------|------------------------|
-| Último commit publicado | `02c08fd` — 2026-05-24+(untracked) safe commit | Idêntico |
-| Working tree (código) | Limpo | — |
-| Docs pendentes | `patchnotes.md`, `changelog.md` | Não publicado |
-| vs upstream/main | Baseado em `8028dde`; upstream em `7fc577e` | Fork 2 commits à frente do merge upstream antigo |
+## git fetch --all
+Fetching origin
+Fetching upstream
 
----
-
-## Estado do fork vs upstream CloakHQ
-
-### Commits locais não presentes no upstream
-- `02c08fd` — safe commit de documentação/backup
-- `d4dcb69` — patchnotes safe commit
-
-### Novidades no upstream (não mergeadas localmente)
-- `8028dde..7fc577e` — avanços em `main`
-- Branches: `feat/gh-models-issue-responder`, `feat/humanize-actionability`, `feat/per-seed-cdp`, `feat/stealth-evaluate`
-
-### Último commit compartilhado com upstream
-- `8028dde` — feat: route HTTP proxy credentials through --proxy-server
-
-## Notes
-
-- Nenhuma alteração de código pendente no PC
-- Atividade 24h: timestamps de arquivos + fetch upstream + atualização de docs
-- Próximo passo opcional: rebase/merge de `upstream/main` para absorver `7fc577e`
+## Remotes
+origin	https://github.com/LucasOl1337/CloakBrowser.git (fetch)
+origin	https://github.com/LucasOl1337/CloakBrowser.git (push)
+upstream	https://github.com/CloakHQ/CloakBrowser.git (fetch)
+upstream	https://github.com/CloakHQ/CloakBrowser.git (push)
