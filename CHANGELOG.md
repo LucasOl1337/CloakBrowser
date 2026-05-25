@@ -1,24 +1,27 @@
 ﻿# Changelog
 
-## 2026-05-25 — Safe commit sync
+## 2026-05-25 — Safe commit sync (retry)
 
 ### PC vs GitHub
 - **Branch:** main
-- **Local commit:** `d240070a3c7d6ca88b94e48ccddf71b387a44b9c`
-- **Remote (origin):** `d240070a3c7d6ca88b94e48ccddf71b387a44b9c`
-- **Ahead/behind (@{u}):** +0 / -0
-- **State before commit:** clean
+- **Local HEAD:** `61741f70d344968e0293e2061cd824370bd8981e`
+- **Push remote (origin):** `61741f70d344968e0293e2061cd824370bd8981e`
+- **Ahead/behind push remote:** +0 / -0
+- **vs upstream (origin/main):** +0 / -0
+- **Working tree:** clean
 
-### Last 24h commits
+### Destaques (ultimas 24h)
+- Sync de backup; sem alteracoes de codigo nas 24h
+
+### Commits (24h)
 ```
-d240070 2026-05-25+(docs) safe commit
-02c08fd 2026-05-24+(untracked) safe commit
-d4dcb69 2026-05-24+(docs) patchnotes safe commit
+61741f7 2026-05-25 10:15:44 -0300 2026-05-25+clean safe commit
+d240070 2026-05-25 10:10:52 -0300 2026-05-25+(docs) safe commit
+02c08fd 2026-05-24 12:12:13 -0300 2026-05-24+(untracked) safe commit
+d4dcb69 2026-05-24 11:00:44 -0300 2026-05-24+(docs) patchnotes safe commit
 ```
 
-### Files changed (working tree)
-```
-(clean)
-```
+### Divergencia upstream (se fork)
+Sincronizado com upstream ou repo proprio.
 
-See patchnotes.md for full divergence details.
+Ver patchnotes.md para detalhes completos.
