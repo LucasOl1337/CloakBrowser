@@ -1,33 +1,45 @@
 # Patch Notes — CloakBrowser
 
-**Data:** 2026-05-24 (atividade local)  
-**Commit local HEAD:** `8028dde` — `feat: route HTTP proxy credentials through --proxy-server`  
+**Data:** 2026-05-25  
+**Estado local:** docs atualizados, código sincronizado  
 **Branch:** `main`  
-**Remote:** `https://github.com/LucasOl1337/CloakBrowser.git` (fork) · upstream `CloakHQ/CloakBrowser`
+**Origin (backup):** `https://github.com/LucasOl1337/CloakBrowser.git`  
+**Upstream oficial:** `https://github.com/CloakHQ/CloakBrowser.git`
 
 ---
 
 ## Resumo
 
-Nenhum commit local do usuário nesta janela de 24h. A atividade local foi limitada a **`profiles/`** (sessões de browser — excluídas do git por segurança). O HEAD atual aponta para o commit upstream de proxy credentials de 2026-05-21.
+Repositório **sincronizado** com GitHub pessoal. Alterações pendentes limitadas a documentação (`patchnotes.md`, `changelog.md`). Upstream CloakHQ avançou com novas branches e commits em `main`.
 
 ---
 
-## Último commit no repositório (upstream)
+## Comparação PC vs GitHub
 
-### Added / Changed
+| Aspecto | PC (local) | GitHub (`origin/main`) |
+|---------|------------|------------------------|
+| Último commit publicado | `02c08fd` — 2026-05-24+(untracked) safe commit | Idêntico |
+| Working tree (código) | Limpo | — |
+| Docs pendentes | `patchnotes.md`, `changelog.md` | Não publicado |
+| vs upstream/main | Baseado em `8028dde`; upstream em `7fc577e` | Fork 2 commits à frente do merge upstream antigo |
 
-- Roteamento de credenciais HTTP proxy via `--proxy-server`
-- `cloakbrowser/browser.py` — suporte expandido a proxy com autenticação
-- `js/src/proxy.ts`, `js/src/puppeteer.ts` — integração JS/TS
-- Testes ampliados: `js/tests/proxy.test.ts`, `tests/test_proxy.py`, `tests/test_persistent_context.py`
+---
 
-## Atividade local (2026-05-24)
+## Estado do fork vs upstream CloakHQ
 
-- Diretório `profiles/` modificado — perfis persistentes de browser (Google, etc.)
-- **Não commitado** — contém cookies/sessões sensíveis
+### Commits locais não presentes no upstream
+- `02c08fd` — safe commit de documentação/backup
+- `d4dcb69` — patchnotes safe commit
+
+### Novidades no upstream (não mergeadas localmente)
+- `8028dde..7fc577e` — avanços em `main`
+- Branches: `feat/gh-models-issue-responder`, `feat/humanize-actionability`, `feat/per-seed-cdp`, `feat/stealth-evaluate`
+
+### Último commit compartilhado com upstream
+- `8028dde` — feat: route HTTP proxy credentials through --proxy-server
 
 ## Notes
 
-- Para publicar alterações locais de perfis, usar backup externo — nunca versionar `profiles/`
-- Considere adicionar `profiles/` ao `.gitignore` se ainda não estiver coberto
+- Nenhuma alteração de código pendente no PC
+- Atividade 24h: timestamps de arquivos + fetch upstream + atualização de docs
+- Próximo passo opcional: rebase/merge de `upstream/main` para absorver `7fc577e`
