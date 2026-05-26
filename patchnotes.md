@@ -1,100 +1,77 @@
-# Patchnotes — comparação PC x GitHub
+﻿# Patch Notes - 2026-05-26 SP safe commit
 
-Gerado: **2026-05-25 21:08:51 -0300**
-Janela pesquisada: **últimas 24 horas** desde `2026-05-24 21:08:51 -0300`.
-Pesquisa local executada com `git fetch --prune`, `git status`, `git log`, `git diff`, listagem de não rastreados e mtimes do filesystem.
+Gerado em: 2026-05-26 12:50:00 -03:00
+Projeto: CloakBrowser
+Caminho local: C:\Users\user\Desktop\CloakBrowser
+Branch local: main
+HEAD local: 941f1af
+Referencia GitHub comparada: origin/main
+HEAD GitHub: 941f1af
+Divergencia: local 0 commit(s) a frente e 0 commit(s) atras de origin/main.
 
-> Este arquivo descreve o estado local encontrado antes do safe commit desta rodada; `patchnotes.md` e `changelog.md` também entram no commit final.
+## Resumo executivo
 
-## Identificação
+- Safe commit solicitado para registrar o estado ativo do PC em 2026-05-26.
+- Arquivos com atividade nas ultimas 24h: 2.
+- Entradas pendentes no working tree antes desta documentacao: 2.
+- Comparacao feita contra origin/main, apos git fetch dos remotes.
+- patchnotes.md e changelog.md foram atualizados para documentar a diferenca PC x GitHub antes do commit.
 
-| Campo | Valor |
-| --- | --- |
-| Projeto | CloakBrowser |
-| Caminho local | `C:\Users\user\Desktop\CloakBrowser` |
-| Branch local | `main` |
-| HEAD local | `b816297` — 2026-05-25+(docs) safe commit |
-| Upstream configurado | `origin/main` |
-| Comparação principal | `origin/main` |
-| Remoto de push planejado | `origin` (`origin/main`) |
-| Mensagem de commit planejada | `2026-05-25+(clean) safe commit` |
+## Remotes GitHub conhecidos
 
-## Resultado da pesquisa
+- origin => https://github.com/LucasOl1337/CloakBrowser.git
+- upstream => https://github.com/CloakHQ/CloakBrowser.git
 
-- Projeto entrou na lista porque: 4 commit(s) local(is) nas últimas 24h; 2 arquivo(s) com mtime nas últimas 24h.
-- Estado Git principal: GitHub à frente `0`, PC à frente `0`.
-- Working tree antes da documentação: `0` item(ns), sendo `0` rastreado(s) e `0` novo(s).
-- Shortstat rastreado PC x GitHub: `sem diff rastreado`.
+## Comparacao PC x GitHub
 
-## Remotos GitHub inspecionados
-
-| Remoto | URL | Ref comparável | GitHub à frente | PC à frente |
-| --- | --- | --- | --- | --- |
-| origin | https://github.com/LucasOl1337/CloakBrowser.git | origin/main | 0 | 0 |
-| upstream | https://github.com/CloakHQ/CloakBrowser.git | upstream/main | 7 | 6 |
-
-## Diferenças rastreadas contra o GitHub
-
-Base principal: `origin/main`.
-
-### Diffstat
+### Estatistica de diferenca rastreada
 
 ```text
-Sem diferenças rastreadas no diff principal.
+ changelog.md  |  84 +++++++++++++---------------------------
+ patchnotes.md | 121 ++++++++++++++++++++++++----------------------------------
+ 2 files changed, 76 insertions(+), 129 deletions(-)
 ```
 
-### Name-status
+### Arquivos rastreados diferentes do GitHub
 
 ```text
-Sem arquivos rastreados diferentes no diff principal.
+M	changelog.md
+M	patchnotes.md
 ```
 
-### Numstat principal
+### Commits locais ainda nao presentes na referencia GitHub
 
-_Sem numstat rastreado._
+```text
+(nenhum)
+```
 
-## Working tree local antes do commit
+### Commits da referencia GitHub ainda nao presentes localmente
 
-_Working tree limpo antes de regravar documentação._
+```text
+(nenhum)
+```
 
-### Arquivos novos não rastreados
+## Working tree local antes do safe commit
 
-_Nenhum arquivo novo não rastreado._
+```text
+ M changelog.md
+ M patchnotes.md
+```
 
-## Classificação de impacto
+### Arquivos novos nao rastreados
 
-_Sem arquivos classificados._
+- Nenhum item encontrado.
 
-### Diretórios mais tocados
+## Arquivos com atividade nas ultimas 24 horas
 
-_Sem diretórios alterados._
+- changelog.md
+- patchnotes.md
 
-## Commits locais ainda não presentes na comparação principal
+## Validacao feita
 
-_Nenhum commit local exclusivo contra a comparação principal._
+- git fetch dos remotes existentes.
+- git status --porcelain=v1 para snapshot do working tree.
+- git diff --stat e git diff --name-status contra a referencia GitHub quando disponivel.
+- Nao foram executadas suites completas de teste nesta etapa; o objetivo foi documentar e preservar o estado ativo em commit seguro.
 
-## Commits do GitHub ainda não presentes no PC
 
-_Nenhum commit remoto exclusivo contra a comparação principal._
-
-## Atividade detectada nas últimas 24 horas
-
-### Commits locais recentes
-
-- `b816297` 2026-05-25T13:29:59-03:00 — 2026-05-25+(docs) safe commit
-- `5fedf95` 2026-05-25T10:19:17-03:00 — 2026-05-25+(clean) safe commit
-- `61741f7` 2026-05-25T10:15:44-03:00 — 2026-05-25+clean safe commit
-- `d240070` 2026-05-25T10:10:52-03:00 — 2026-05-25+(docs) safe commit
-
-### Arquivos com mtime recente
-
-| Tipo | Arquivo | KB | Modificado em |
-| --- | --- | --- | --- |
-| tracked | changelog.md | 2.2 | 2026-05-25 13:27:42 -0300 |
-| tracked | patchnotes.md | 3.7 | 2026-05-25 13:27:42 -0300 |
-
-## Notas de segurança do safe commit
-
-- Não foram removidos arquivos durante a geração das notas.
-- O commit final deve usar `git add -A` para preservar alterações rastreadas, renomes de `changelog.md` e arquivos novos não ignorados.
-- Repositórios com remoto de origem de terceiros usam remoto backup pessoal quando disponível para evitar force-push ou alteração de upstream externo.
