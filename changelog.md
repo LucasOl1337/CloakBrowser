@@ -5,12 +5,12 @@
 
 | Campo | Valor |
 | --- | --- |
-| Commit planejado | `2026-05-25+(docs) safe commit` |
+| Commit planejado | `2026-05-25+(clean) safe commit` |
 | Projeto | `CloakBrowser` |
 | Branch | `main` |
 | Comparação GitHub | `origin/main` |
 | GitHub à frente / PC à frente | `0` / `0` |
-| Working tree pesquisado | `2` item(ns); `0` novo(s) |
+| Working tree pesquisado | `0` item(ns); `0` novo(s) |
 | Remoto de push | `origin` (`origin/main`) |
 
 ### Added
@@ -20,23 +20,15 @@
 
 ### Changed
 
-- `CHANGELOG.md -> changelog.md`
-- `patchnotes.md`
+- Nenhum arquivo rastreado alterado antes da documentação; a mudança principal desta rodada é documental.
 
 ### Impacto por categoria
 
-| Categoria | Qtd. arquivos |
-| --- | --- |
-| Documentação | 4 |
+_Sem mudanças classificadas._
 
 ### Diretórios impactados
 
-| Diretório | Qtd. referências |
-| --- | --- |
-| CHANGELOG.md | 1 |
-| CHANGELOG.md -> changelog.md | 1 |
-| changelog.md | 1 |
-| patchnotes.md | 1 |
+_Sem diretórios impactados._
 
 ### GitHub sync
 
@@ -49,6 +41,8 @@
 - Sem commits locais exclusivos contra a comparação principal.
 
 <!-- codex-safe-commit:end -->
+
+## Histórico anterior preservado
 
 ## Histórico anterior preservado
 

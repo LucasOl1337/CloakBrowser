@@ -1,7 +1,7 @@
 # Patchnotes — comparação PC x GitHub
 
-Gerado: **2026-05-25 13:26:58 -0300**
-Janela pesquisada: **últimas 24 horas** desde `2026-05-24 13:26:58 -0300`.
+Gerado: **2026-05-25 21:08:51 -0300**
+Janela pesquisada: **últimas 24 horas** desde `2026-05-24 21:08:51 -0300`.
 Pesquisa local executada com `git fetch --prune`, `git status`, `git log`, `git diff`, listagem de não rastreados e mtimes do filesystem.
 
 > Este arquivo descreve o estado local encontrado antes do safe commit desta rodada; `patchnotes.md` e `changelog.md` também entram no commit final.
@@ -13,26 +13,25 @@ Pesquisa local executada com `git fetch --prune`, `git status`, `git log`, `git 
 | Projeto | CloakBrowser |
 | Caminho local | `C:\Users\user\Desktop\CloakBrowser` |
 | Branch local | `main` |
-| HEAD local | `5fedf95` — 2026-05-25+(clean) safe commit |
+| HEAD local | `b816297` — 2026-05-25+(docs) safe commit |
 | Upstream configurado | `origin/main` |
 | Comparação principal | `origin/main` |
 | Remoto de push planejado | `origin` (`origin/main`) |
-| Mensagem de commit planejada | `2026-05-25+(docs) safe commit` |
+| Mensagem de commit planejada | `2026-05-25+(clean) safe commit` |
 
 ## Resultado da pesquisa
 
-- Projeto entrou na lista porque: 2 item(ns) no working tree (2 rastreado(s), 0 novo(s)); 3 commit(s) local(is) nas últimas 24h; 2 arquivo(s) com mtime nas últimas 24h.
+- Projeto entrou na lista porque: 4 commit(s) local(is) nas últimas 24h; 2 arquivo(s) com mtime nas últimas 24h.
 - Estado Git principal: GitHub à frente `0`, PC à frente `0`.
-- Working tree antes da documentação: `2` item(ns), sendo `2` rastreado(s) e `0` novo(s).
-- Shortstat rastreado PC x GitHub: ` 3 files changed, 172 insertions(+), 80 deletions(-)
-`.
+- Working tree antes da documentação: `0` item(ns), sendo `0` rastreado(s) e `0` novo(s).
+- Shortstat rastreado PC x GitHub: `sem diff rastreado`.
 
 ## Remotos GitHub inspecionados
 
 | Remoto | URL | Ref comparável | GitHub à frente | PC à frente |
 | --- | --- | --- | --- | --- |
 | origin | https://github.com/LucasOl1337/CloakBrowser.git | origin/main | 0 | 0 |
-| upstream | https://github.com/CloakHQ/CloakBrowser.git | upstream/main | 7 | 5 |
+| upstream | https://github.com/CloakHQ/CloakBrowser.git | upstream/main | 7 | 6 |
 
 ## Diferenças rastreadas contra o GitHub
 
@@ -41,35 +40,22 @@ Base principal: `origin/main`.
 ### Diffstat
 
 ```text
- CHANGELOG.md  |  27 -----------
- changelog.md  |  77 ++++++++++++++++++++++++++++++
- patchnotes.md | 148 +++++++++++++++++++++++++++++++++++++---------------------
- 3 files changed, 172 insertions(+), 80 deletions(-)
-
+Sem diferenças rastreadas no diff principal.
 ```
 
 ### Name-status
 
 ```text
-D	CHANGELOG.md
-A	changelog.md
-M	patchnotes.md
+Sem arquivos rastreados diferentes no diff principal.
 ```
 
 ### Numstat principal
 
-| Arquivo | Linhas + | Linhas - |
-| --- | --- | --- |
-| CHANGELOG.md | 0 | 27 |
-| changelog.md | 77 | 0 |
-| patchnotes.md | 95 | 53 |
+_Sem numstat rastreado._
 
 ## Working tree local antes do commit
 
-| Status | Arquivo |
-| --- | --- |
-| RM | CHANGELOG.md -> changelog.md |
-|  M | patchnotes.md |
+_Working tree limpo antes de regravar documentação._
 
 ### Arquivos novos não rastreados
 
@@ -77,18 +63,11 @@ _Nenhum arquivo novo não rastreado._
 
 ## Classificação de impacto
 
-| Categoria | Qtd. arquivos |
-| --- | --- |
-| Documentação | 4 |
+_Sem arquivos classificados._
 
 ### Diretórios mais tocados
 
-| Diretório | Qtd. referências |
-| --- | --- |
-| CHANGELOG.md | 1 |
-| CHANGELOG.md -> changelog.md | 1 |
-| changelog.md | 1 |
-| patchnotes.md | 1 |
+_Sem diretórios alterados._
 
 ## Commits locais ainda não presentes na comparação principal
 
@@ -102,6 +81,7 @@ _Nenhum commit remoto exclusivo contra a comparação principal._
 
 ### Commits locais recentes
 
+- `b816297` 2026-05-25T13:29:59-03:00 — 2026-05-25+(docs) safe commit
 - `5fedf95` 2026-05-25T10:19:17-03:00 — 2026-05-25+(clean) safe commit
 - `61741f7` 2026-05-25T10:15:44-03:00 — 2026-05-25+clean safe commit
 - `d240070` 2026-05-25T10:10:52-03:00 — 2026-05-25+(docs) safe commit
@@ -110,8 +90,8 @@ _Nenhum commit remoto exclusivo contra a comparação principal._
 
 | Tipo | Arquivo | KB | Modificado em |
 | --- | --- | --- | --- |
-| tracked | changelog.md | 2.1 | 2026-05-25 13:25:02 -0300 |
-| tracked | patchnotes.md | 3.3 | 2026-05-25 13:25:02 -0300 |
+| tracked | changelog.md | 2.2 | 2026-05-25 13:27:42 -0300 |
+| tracked | patchnotes.md | 3.7 | 2026-05-25 13:27:42 -0300 |
 
 ## Notas de segurança do safe commit
 
