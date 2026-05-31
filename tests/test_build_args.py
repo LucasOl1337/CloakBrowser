@@ -148,7 +148,8 @@ def test_non_value_flags_preserved():
     args = build_args(stealth_args=True, extra_args=["--disable-gpu", "--no-zygote"])
     assert "--disable-gpu" in args
     assert "--no-zygote" in args
-    assert "--no-sandbox" in args
+    # User can still explicitly pass --no-sandbox if they really want it.
+    # By default it is no longer present on Windows / native desktop.
 
 
 def test_override_logs_debug(caplog):
@@ -197,5 +198,6 @@ def test_resolve_webrtc_args_no_flag():
     """No webrtc flag in args should return args unchanged."""
     from cloakbrowser.browser import _resolve_webrtc_args
 
+    # Using --no-sandbox here just as an example passthrough flag
     result = _resolve_webrtc_args(["--no-sandbox"], "http://proxy:8080")
     assert result == ["--no-sandbox"]

@@ -20,7 +20,10 @@ describe("config", () => {
     const args = getDefaultStealthArgs();
     const isMac = process.platform === "darwin";
 
-    expect(args).toContain("--no-sandbox");
+    // --no-sandbox is intentionally omitted on Windows/macOS and non-container Linux.
+    // Google rejects browsers launched with it on sign-in (400 errors).
+    // It is only added automatically inside Linux containers.
+    expect(args).not.toContain("--no-sandbox");
 
     if (isMac) {
       expect(args).toContain("--fingerprint-platform=macos");
@@ -179,7 +182,8 @@ describe("buildArgs deduplication", () => {
     const args = _buildArgsForTest({ args: ["--disable-gpu", "--no-zygote"] });
     expect(args).toContain("--disable-gpu");
     expect(args).toContain("--no-zygote");
-    expect(args).toContain("--no-sandbox");
+    // --no-sandbox is not added by default anymore (only in Linux containers).
+    // Users can still pass it explicitly if needed.
   });
 });
 

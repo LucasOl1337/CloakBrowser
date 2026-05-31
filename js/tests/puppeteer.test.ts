@@ -54,7 +54,8 @@ describe("puppeteer launch", () => {
 
     const callArgs = vi.mocked(puppeteerMock.default.launch).mock.calls[0][0];
     expect(callArgs.args.some((a: string) => a.startsWith("--fingerprint="))).toBe(true);
-    expect(callArgs.args).toContain("--no-sandbox");
+    // --no-sandbox is no longer included by default on Windows/macOS (causes Google 400s)
+    expect(callArgs.args).not.toContain("--no-sandbox");
   });
 
   it("excludes stealth args when stealthArgs=false", async () => {
