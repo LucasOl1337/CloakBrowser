@@ -2,6 +2,34 @@
 
 ## [2026-06-02] - Safe Commit Sync (Multi-Agent + PC vs GitHub Research)
 
+**Project:** CloakBrowser  |  **Branch:** main  |  **State:** clean
+
+### PC vs GitHub at Research Time
+- Local HEAD: df33e66 (C:\Users\user\Desktop\CloakBrowser)
+- Remote (origin): df33e66
+- Ahead/Behind: +0 / -0
+- Rebase performed: False (conflicts resolved preferring PC: False, aborted: False)
+- 24h commits: 1
+- Uncommitted lines (porcelain): 0
+
+### Summary of Changes Being Committed
+All pending local work + recent history snapshotted after research and optional rebase. Categories: 
+
+### 24h Commit Subjects (local)
+- df33e66 2026-06-02+docs safe commit (3 minutes ago)
+
+### Files Changed (working tree post-recon)
+(clean)
+
+See patchnotes.md for full divergence tables, categorized research, remotes, fetch log, and multi-agent reconciliation details.
+
+---
+Prior changelog entries preserved (truncated):
+
+# Changelog
+
+## [2026-06-02] - Safe Commit Sync (Multi-Agent + PC vs GitHub Research)
+
 **Project:** CloakBrowser  |  **Branch:** main  |  **State:** docs
 
 ### PC vs GitHub at Research Time
@@ -28,37 +56,6 @@ See patchnotes.md for full divergence tables, categorized research, remotes, fet
 
 ---
 Prior changelog entries preserved (truncated):
-
-# Changelog
-
-## [2026-06-02] - Safe Commit Sync (Multi-Agent + PC vs GitHub Research)
-
-**Project:** CloakBrowser  |  **Branch:** main  |  **State:** clean
-
-### PC vs GitHub at Research Time
-- Local HEAD: 5c3a10d (C:\Users\user\Desktop\CloakBrowser)
-- Remote (origin): 5c3a10d
-- Ahead/Behind: +0 / -0
-- Rebase performed: False (conflicts resolved preferring PC: False, aborted: False)
-- 24h commits: 0
-- Uncommitted lines (porcelain): 0
-
-### Summary of Changes Being Committed
-All pending local work + recent history snapshotted after research and optional rebase. Categories: 
-
-### 24h Commit Subjects (local)
-- (none; work was uncommitted)
-
-### Files Changed (working tree post-recon)
-(clean)
-
-See patchnotes.md for full divergence tables, categorized research, remotes, fetch log, and multi-agent reconciliation details.
-
----
-Prior changelog entries preserved (truncated):
-
-# Changelog
-
 
 
 <!-- 2026-06-02 safe sync: content also in changelog.md (case-insens overlap handled) -->
