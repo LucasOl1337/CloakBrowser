@@ -1,62 +1,74 @@
-# Changelog
+# Changelog - CloakBrowser
 
-## [2026-06-02] - Safe Commit Sync (Multi-Agent + PC vs GitHub Research)
+Generated: 2026-06-08 23:46:34 -03:00
 
-**Project:** CloakBrowser  |  **Branch:** main  |  **State:** clean
+## 2026-06-08 - active safe commit
 
-### PC vs GitHub at Research Time
-- Local HEAD: df33e66 (C:\Users\user\Desktop\CloakBrowser)
-- Remote (origin): df33e66
-- Ahead/Behind: +0 / -0
-- Rebase performed: False (conflicts resolved preferring PC: False, aborted: False)
-- 24h commits: 1
-- Uncommitted lines (porcelain): 0
+### Repository state
 
-### Summary of Changes Being Committed
-All pending local work + recent history snapshotted after research and optional rebase. Categories: 
+- Repository: $repo
+- Branch: $branch
+- Local HEAD before commit: $head
+- Upstream compared: $upstream
+- GitHub comparison: Remote-only commits: 0; local-only commits: 0.
 
-### 24h Commit Subjects (local)
-- df33e66 2026-06-02+docs safe commit (3 minutes ago)
+### Included change classes
 
-### Files Changed (working tree post-recon)
-(clean)
+- Existing tracked modifications and deletions present in the working tree.
+- New safe documentation, source, test, configuration example, and evidence files that are not dependency/runtime/cache/secret artifacts.
+- This changelog.md file and the matching patchnotes.md file generated before commit as requested.
 
-See patchnotes.md for full divergence tables, categorized research, remotes, fetch log, and multi-agent reconciliation details.
+### Excluded from safe staging
 
----
-Prior changelog entries preserved (truncated):
+- Dependency folders such as 
+ode_modules, .venv, env, build outputs, caches, and compiled binaries.
+- Runtime browser/session/state material such as WhatsApp/Chromium profiles, IndexedDB, local storage, GPU caches, and transient network files.
+- Local databases, database journals, raw audio/media caches, logs, temporary tunnel folders, and .env style private configuration.
 
-# Changelog
+### Detailed safe status preview
 
-## [2026-06-02] - Safe Commit Sync (Multi-Agent + PC vs GitHub Research)
-
-**Project:** CloakBrowser  |  **Branch:** main  |  **State:** docs
-
-### PC vs GitHub at Research Time
-- Local HEAD: 5c3a10d (C:\Users\user\Desktop\CloakBrowser)
-- Remote (origin): 5c3a10d
-- Ahead/Behind: +0 / -0
-- Rebase performed: False (conflicts resolved preferring PC: False, aborted: False)
-- 24h commits: 0
-- Uncommitted lines (porcelain): 2
-
-### Summary of Changes Being Committed
-All pending local work + recent history snapshotted after research and optional rebase. Categories: docs: patchnotes.md (1)
-
-### 24h Commit Subjects (local)
-- (none; work was uncommitted)
-
-### Files Changed (working tree post-recon)
-```
-M changelog.md
+``text
+ M changelog.md
  M patchnotes.md
-```
+?? .codegraph/.gitignore
+?? .codegraph/graph.html
+``
 
-See patchnotes.md for full divergence tables, categorized research, remotes, fetch log, and multi-agent reconciliation details.
+### Detailed tracked diff stat
 
----
-Prior changelog entries preserved (truncated):
+``text
+warning: in the working copy of 'changelog.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'patchnotes.md', LF will be replaced by CRLF the next time Git touches it
+ changelog.md  | 308 ++++++++++++++++++++++++++++++++++++---------
+ patchnotes.md | 399 ++++++++++++++++++++++++++++++++++++----------------------
+ 2 files changed, 496 insertions(+), 211 deletions(-)
+``
 
+### Recent local commits before this commit
 
-<!-- 2026-06-02 safe sync: content also in changelog.md (case-insens overlap handled) -->
+``text
+6647abe (HEAD -> main, origin/main, origin/HEAD) 2026-06-02+clean safe commit
+df33e66 2026-06-02+docs safe commit
+5c3a10d 2026-05-31+synced safe commit
+46326f5 2026-05-26+SP safe commit
+941f1af 2026-05-25+(clean) safe commit
+b816297 2026-05-25+(docs) safe commit
+5fedf95 2026-05-25+(clean) safe commit
+61741f7 2026-05-25+clean safe commit
+d240070 2026-05-25+(docs) safe commit
+02c08fd 2026-05-24+(untracked) safe commit
+d4dcb69 2026-05-24+(docs) patchnotes safe commit
+8028dde feat: route HTTP proxy credentials through --proxy-server
+``
 
+### Remote-only commits at comparison time
+
+``text
+No remote-only commits found or no upstream available.
+``
+
+### Local-only commits at comparison time
+
+``text
+No local-only commits found or no upstream available.
+``

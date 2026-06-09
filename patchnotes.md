@@ -1,149 +1,70 @@
-# Patch Notes - 2026-06-02 Safe Sync (PC vs GitHub Research)
+# Patchnotes - CloakBrowser
 
-**Project:** CloakBrowser (CloakBrowser stealth browser (Python/JS, profiles, tests, flake, docker))
-**Path:** C:\Users\user\Desktop\CloakBrowser
-**Branch:** main (push: origin)
-**Generated:** 2026-06-02 11:48:25
-**State:** clean | Pre-rebase state: clean | Ahead/Behind post: +0 / -0
+Generated: 2026-06-08 23:46:34 -03:00
+Repository: $repo
+Branch: $branch
+Local HEAD: $head
+Upstream: $upstream
+Commit prepared as: $commitMsg
 
-## Executive Summary
-Batch safe commit for projects with 24h activity (file mods, commits, dirty tree, or agent-driven patch/changelog touches). Research performed locally via git (fetch, rev-list, diff, status, stash/rebase) comparing current PC working tree + HEAD against GitHub remote (origin/main).
+## Executive summary
 
-This snapshot captures all local mutations since last synced safe commit (typically 05-31). Includes work from parallel agent sessions (Grok, Claude, sub-agents, /loop etc.). Conflicts (if any during rebase to integrate latest GitHub) were resolved preferring **--ours (PC/local version)** to preserve the authoritative state on this machine.
+This safe commit records the current active local state detected in the last 24 hours. The repository was compared against its configured GitHub/upstream branch when available. The commit intentionally separates useful source, documentation, tests, and evidence from generated local runtime material such as dependency folders, browser sessions, caches, database journals, temporary logs, and private environment files.
 
-Key stats: 24h commits present=yes, dirty=no, stashed=False, rebased=False, conflicts-resolved=False, rebase-aborted=False.
+## Local versus GitHub
 
-## Local PC vs GitHub Comparison (Post-Reconciliation Research)
+Remote-only commits: 0; local-only commits: 0.
 
-| Aspect | PC (Local) | GitHub (origin) | Notes |
-|--------|------------|---------------------|-------|
-| HEAD | df33e66 | df33e66 | Post-rebase if applied |
-| Branch tracking | main | origin/main | |
-| Ahead / Behind | +0 | -0 | 0/0 ideal after rebase |
-| Working tree | clean | (remote clean by definition) | Uncommitted on PC |
-| Unique commits (24h) | 1 listed | See div below | |
-| Divergence PC-only commits | 0 | - | These + uncommitted = what we commit |
-| Divergence GH-only | - | 0 | Integrated via rebase (or ignored if aborted) |
+### Remote-only commits
 
-### Commits unique to PC (will be part of this safe commit or already in HEAD)
-(none - all local work is uncommitted or already matched)
+``text
+No remote-only commits found or no upstream available.
+``
 
-### Commits only on GitHub (fetched, integrated where possible)
-(none - PC was at or ahead of remote at research time)
+### Local-only commits
 
-### Recent 24h local commits (full subjects + relative time)
-  df33e66 2026-06-02+docs safe commit (3 minutes ago)
+``text
+No local-only commits found or no upstream available.
+``
 
-### Pending uncommitted changes on PC (porcelain post-rebase/pop)
-(clean working tree after reconciliation)
+## Safe working-tree snapshot before these notes
 
-### Diff stat (unstaged work to be snapshotted)
-(no diff or only cached)
+Total Git status entries detected, including untracked: 1
+Safe entries selected for commit consideration before notes: 1
 
-### Untracked files
-(none)
-
-### Change categorization (inferred from paths)
-
-
-### Remotes (full)
-```
-origin	https://github.com/LucasOl1337/CloakBrowser.git (fetch)
-origin	https://github.com/LucasOl1337/CloakBrowser.git (push)
-upstream	https://github.com/CloakHQ/CloakBrowser.git (fetch)
-upstream	https://github.com/CloakHQ/CloakBrowser.git (push)
-```
-
-### git fetch output (abridged)
-```
-Fetching origin
-Fetching upstream
-```
-
-## Multi-Agent Parallel Work & Conflict Handling
-Many agents (Grok 4.3, Claude, specialized sub-agents, background loops, best-of-n, implement/review loops) operated in parallel across the 23 active projects.
-Observed artifacts: simultaneous edits to patchnotes.md/changelog.md (timestamp ~10:05), .codegraph/ db updates (indexing), source in Kamui/Yume/Terminal/Sennin/simple-ai/VideoGen/LUCA, heavy data/job writes (OmniVoiceDash), recent feature commits (nexarq ~40 commits with detailed feat/fix messages), .bak experiment files, agent handoff mds, heartbeat/state json.
-
-Reconciliation strategy used here:
-- git fetch --all to pull latest GitHub (other agents or CI may have pushed).
-- Stash uncommitted PC work.
-- Rebase onto origin/main (preferring GitHub base).
-- On CONFLICT: checkout --ours + add (PC local wins for the snapshot of 'what is on this machine now').
-- Pop stash. This ensures the safe commit represents the authoritative PC reality on top of (or reconciled with) GitHub.
-- If rebase aborted: still proceed with commit of current PC tree (safe, no data loss).
-- Uniform detailed patchnotes + changelog written before the git add -A + commit.
-
-No hard unresolvable conflicts left; state includes 'conflict-resolved' or 'rebase-aborted' flags where applicable. Cross-project overlaps (grokassets, AGENTS.md, brand, docs) handled by consistent formatting.
-
-## Conclusion & Next
-PC version researched and documented vs GitHub. All qualifying mutations (code, docs, data from agent runs, experiments) staged for the **2026-06-02+clean safe commit**.
-Push target: origin (may be backup/safe for non-primary forks or to avoid affecting public upstreams like sub2api).
-See changelog.md for the concise entry. Prior history preserved below the --- marker.
-
----
-Prior patch history (preserved from file before overwrite of top section):
-
-# Patch Notes - 2026-06-02 Safe Sync (PC vs GitHub Research)
-
-**Project:** CloakBrowser (CloakBrowser stealth browser (Python/JS, profiles, tests, flake, docker))
-**Path:** C:\Users\user\Desktop\CloakBrowser
-**Branch:** main (push: origin)
-**Generated:** 2026-06-02 11:42:57
-**State:** docs | Pre-rebase state: docs | Ahead/Behind post: +0 / -0
-
-## Executive Summary
-Batch safe commit for projects with 24h activity (file mods, commits, dirty tree, or agent-driven patch/changelog touches). Research performed locally via git (fetch, rev-list, diff, status, stash/rebase) comparing current PC working tree + HEAD against GitHub remote (origin/main).
-
-This snapshot captures all local mutations since last synced safe commit (typically 05-31). Includes work from parallel agent sessions (Grok, Claude, sub-agents, /loop etc.). Conflicts (if any during rebase to integrate latest GitHub) were resolved preferring **--ours (PC/local version)** to preserve the authoritative state on this machine.
-
-Key stats: 24h commits present=no, dirty=yes, stashed=True, rebased=False, conflicts-resolved=False, rebase-aborted=False.
-
-## Local PC vs GitHub Comparison (Post-Reconciliation Research)
-
-| Aspect | PC (Local) | GitHub (origin) | Notes |
-|--------|------------|---------------------|-------|
-| HEAD | 5c3a10d | 5c3a10d | Post-rebase if applied |
-| Branch tracking | main | origin/main | |
-| Ahead / Behind | +0 | -0 | 0/0 ideal after rebase |
-| Working tree | dirty (2 lines) | (remote clean by definition) | Uncommitted on PC |
-| Unique commits (24h) | 0 listed | See div below | |
-| Divergence PC-only commits | 0 | - | These + uncommitted = what we commit |
-| Divergence GH-only | - | 0 | Integrated via rebase (or ignored if aborted) |
-
-### Commits unique to PC (will be part of this safe commit or already in HEAD)
-(none - all local work is uncommitted or already matched)
-
-### Commits only on GitHub (fetched, integrated where possible)
-(none - PC was at or ahead of remote at research time)
-
-### Recent 24h local commits (full subjects + relative time)
-  (no new commits in last 24h; changes are uncommitted or from prior)
-
-### Pending uncommitted changes on PC (porcelain post-rebase/pop)
-```
-M changelog.md
+``text
+ M changelog.md
  M patchnotes.md
-```
+?? .codegraph/.gitignore
+?? .codegraph/graph.html
+``
 
-### Diff stat (unstaged work to be snapshotted)
-```
-changelog.md  |  88 +++++++++++---------------------
- patchnotes.md | 158 ++++++++++++++++++++++++++++++++++------------------------
- 2 files changed, 120 insertions(+), 126 deletions(-)
-```
+## Tracked diff summary before these notes
 
-### Untracked files
-(none)
+``text
+warning: in the working copy of 'changelog.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'patchnotes.md', LF will be replaced by CRLF the next time Git touches it
+ changelog.md  | 308 ++++++++++++++++++++++++++++++++++++---------
+ patchnotes.md | 399 ++++++++++++++++++++++++++++++++++++----------------------
+ 2 files changed, 496 insertions(+), 211 deletions(-)
+``
 
-### Change categorization (inferred from paths)
-docs: patchnotes.md (1)
+## Tracked file changes before these notes
 
-### Remotes (full)
-```
-origin	https://github.com/LucasOl1337/CloakBrowser.git (fetch)
-origin	https://github.com/LucasOl1337/CloakBrowser.git (push)
-upstream	https://github.com/CloakHQ/CloakBrowser.git (fetch)
+``text
+warning: in the working copy of 'changelog.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'patchnotes.md', LF will be replaced by CRLF the next time Git touches it
+M	changelog.md
+M	patchnotes.md
+``
 
-... (older history in git + truncated for readability; use git log -S patchnotes or open full file in editor)
+## Conflict and parallel-agent handling
 
-(End of 2026-06-02 augmentation. Full git history has complete trail.)
+- Fetched remotes before preparing the commit when a remote was configured.
+- Preserved the current branch and local working tree instead of resetting or discarding parallel agent work.
+- Excluded generated dependency/runtime folders and local secrets from staging to keep the commit safe.
+- If the branch was behind GitHub, the follow-up push step should rebase or require conflict resolution before publishing.
+
+## Validation status
+
+No project-specific test suite was run automatically from this batch operation. The notes are based on Git metadata, file status, and local versus remote comparison.
