@@ -1,4 +1,32 @@
-# Changelog - CloakBrowser
+# Changelog
+## [2026-06-16] - Safe Commit Sync (Multi-Agent + PC vs GitHub Research)
+
+**Project:** CloakBrowser  |  **Branch:** main  |  **State:** active
+
+### PC vs GitHub at Research Time
+- Local HEAD: c32e9aa (C:\Users\user\Desktop\CloakBrowser)
+- Remote (origin): c32e9aa
+- Ahead/Behind: +0 / -0
+- 24h commits: 0
+- Uncommitted entries (porcelain): 2
+
+### Summary of Changes Being Committed
+root: atchnotes.md, .codegraph/, .codegraph/.gitignore ... (4 total)
+
+### 24h Commit Subjects (local)
+- (none)
+
+### Files Changed (working tree preview)
+```text
+M patchnotes.md
+?? .codegraph/
+```
+
+See patchnotes.md for full divergence tables, categorized research, remotes, fetch log, and multi-agent reconciliation details.
+
+---
+Prior changelog entries preserved:
+
 
 Generated: 2026-06-08 23:46:34 -03:00
 
@@ -72,3 +100,4 @@ No remote-only commits found or no upstream available.
 ``text
 No local-only commits found or no upstream available.
 ``
+
