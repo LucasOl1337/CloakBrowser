@@ -1,0 +1,78 @@
+{
+  "brand": {
+    "name": "Cloak",
+    "vendor": "CloakBrowser",
+    "footer": "CLOAKBROWSER",
+    "masthead": "RELEASE NOTES",
+    "footerLeft": "Full notes available on GitHub Releases",
+    "bgGradient": ["#0B1020", "#102A43", "#143D2E"],
+    "pillGradient": ["#16A34A", "#22D3EE"]
+  },
+  "version": "v0.1.0",
+  "date": "26 de junho de 2026 · Release oficial",
+  "categories": [
+    {
+      "label": "Novidades",
+      "title": "NOVIDADES",
+      "color": "#FBBF24",
+      "items": [
+        {
+          "name": "Stealth Chromium wrapper",
+          "desc": "Python and JavaScript APIs launch patched Chromium",
+          "tag": "API"
+        },
+        {
+          "name": "Drop-in browser APIs",
+          "desc": "Playwright and Puppeteer-style calls keep working",
+          "tag": "SDK"
+        }
+      ]
+    },
+    {
+      "label": "Melhorias",
+      "title": "MELHORIAS",
+      "color": "#34D399",
+      "items": [
+        {
+          "name": "Humanized interactions",
+          "desc": "humanize=True adds mouse, keyboard and scroll timing",
+          "tag": "STEALTH"
+        },
+        {
+          "name": "Proxy-aware identity",
+          "desc": "HTTP/SOCKS5, timezone, locale and WebRTC options",
+          "tag": "NET"
+        }
+      ]
+    },
+    {
+      "label": "Correcoes",
+      "title": "CORRECOES",
+      "color": "#38BDF8",
+      "items": [
+        {
+          "name": "Automation signal hardening",
+          "desc": "Source patches cover webdriver, canvas and WebGL",
+          "tag": "PATCHES"
+        }
+      ]
+    },
+    {
+      "label": "Sistemas",
+      "title": "SISTEMAS",
+      "color": "#A78BFA",
+      "items": [
+        {
+          "name": "Checksum verification",
+          "desc": "Downloads are validated with SHA-256 before use",
+          "tag": "SUPPLY"
+        },
+        {
+          "name": "Package distribution",
+          "desc": "Metadata supports pip, npm, Docker and source installs",
+          "tag": "PACKAGE"
+        }
+      ]
+    }
+  ]
+}

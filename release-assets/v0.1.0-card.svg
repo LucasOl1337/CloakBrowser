@@ -1,0 +1,68 @@
+<svg width="680" height="555" viewBox="0 0 680 555" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#0B1020"/><stop offset="0.6" stop-color="#102A43"/><stop offset="1" stop-color="#143D2E"/></linearGradient>
+<linearGradient id="pill" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#16A34A"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+<style>text{font-family:'Segoe UI','Inter',system-ui,sans-serif}.hd{font-weight:700}.sec{font-weight:700;letter-spacing:1.5px}.nm{font-weight:600}.sub{font-weight:400}.tag{font-weight:600;letter-spacing:1px}</style>
+</defs>
+<rect x="0" y="0" width="680" height="555" fill="url(#bg)"/>
+<path d="M16 44 L16 16 L44 16" fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1"/>
+<path d="M664 44 L664 16 L636 16" fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1"/>
+<text x="28" y="52" font-size="30" class="hd" fill="#ffffff">Cloak</text>
+<rect x="150" y="33" width="66" height="25" rx="12.5" fill="url(#pill)"/>
+<text x="183" y="50" font-size="14" class="nm" fill="#ffffff" text-anchor="middle">v0.1.0</text>
+<text x="28" y="80" font-size="12.5" class="sec" fill="#A3A3F6">RELEASE NOTES</text>
+<text x="652" y="34" font-size="11" class="sec" fill="#B490BA" text-anchor="end" letter-spacing="3">CloakBrowser</text>
+<text x="652" y="56" font-size="11.5" class="sub" fill="#C4C4FF" text-anchor="end">26 de junho de 2026 · Release oficial</text>
+<line x1="28" y1="94" x2="652" y2="94" stroke="#ffffff" stroke-opacity="0.15"/>
+<rect x="28" y="110" width="11" height="11" rx="2" fill="#FBBF24"/>
+<text x="45" y="120" font-size="12" class="nm" fill="#E6E2F5">Novidades</text>
+<rect x="150" y="110" width="11" height="11" rx="2" fill="#34D399"/>
+<text x="167" y="120" font-size="12" class="nm" fill="#E6E2F5">Melhorias</text>
+<rect x="272" y="110" width="11" height="11" rx="2" fill="#38BDF8"/>
+<text x="289" y="120" font-size="12" class="nm" fill="#E6E2F5">Correcoes</text>
+<rect x="394" y="110" width="11" height="11" rx="2" fill="#A78BFA"/>
+<text x="411" y="120" font-size="12" class="nm" fill="#E6E2F5">Sistemas</text>
+<text x="652" y="120" font-size="10.5" class="sub" fill="#7C7398" text-anchor="end">tag à direita = módulo</text>
+<line x1="28" y1="138" x2="652" y2="138" stroke="#ffffff" stroke-opacity="0.08"/>
+<rect x="28" y="152" width="4" height="20" rx="2" fill="#FBBF24"/>
+<text x="42" y="167" font-size="13.5" class="sec" fill="#FBBF24">NOVIDADES</text>
+<text x="652" y="167" font-size="11" class="sub" fill="#8B82A8" text-anchor="end">2 itens</text>
+<circle cx="44" cy="192" r="3.5" fill="#FBBF24"/>
+<text x="56" y="196" font-size="13"><tspan class="nm" fill="#ffffff">Stealth Chromium wrapper </tspan><tspan class="sub" fill="#BDB6D8">— Python and JavaScript APIs launch patched Chromium</tspan></text>
+<text x="652" y="196" font-size="10.5" class="tag" fill="#7C7398" text-anchor="end">API</text>
+<circle cx="44" cy="217" r="3.5" fill="#FBBF24"/>
+<text x="56" y="221" font-size="13"><tspan class="nm" fill="#ffffff">Drop-in browser APIs </tspan><tspan class="sub" fill="#BDB6D8">— Playwright and Puppeteer-style calls keep working</tspan></text>
+<text x="652" y="221" font-size="10.5" class="tag" fill="#7C7398" text-anchor="end">SDK</text>
+<line x1="28" y1="237" x2="652" y2="237" stroke="#ffffff" stroke-opacity="0.08"/>
+<rect x="28" y="253" width="4" height="20" rx="2" fill="#34D399"/>
+<text x="42" y="268" font-size="13.5" class="sec" fill="#34D399">MELHORIAS</text>
+<text x="652" y="268" font-size="11" class="sub" fill="#8B82A8" text-anchor="end">2 itens</text>
+<circle cx="44" cy="293" r="3.5" fill="#34D399"/>
+<text x="56" y="297" font-size="13"><tspan class="nm" fill="#ffffff">Humanized interactions </tspan><tspan class="sub" fill="#BDB6D8">— humanize=True adds mouse, keyboard and scroll timing</tspan></text>
+<text x="652" y="297" font-size="10.5" class="tag" fill="#7C7398" text-anchor="end">STEALTH</text>
+<circle cx="44" cy="318" r="3.5" fill="#34D399"/>
+<text x="56" y="322" font-size="13"><tspan class="nm" fill="#ffffff">Proxy-aware identity </tspan><tspan class="sub" fill="#BDB6D8">— HTTP/SOCKS5, timezone, locale and WebRTC options</tspan></text>
+<text x="652" y="322" font-size="10.5" class="tag" fill="#7C7398" text-anchor="end">NET</text>
+<line x1="28" y1="338" x2="652" y2="338" stroke="#ffffff" stroke-opacity="0.08"/>
+<rect x="28" y="354" width="4" height="20" rx="2" fill="#38BDF8"/>
+<text x="42" y="369" font-size="13.5" class="sec" fill="#38BDF8">CORRECOES</text>
+<text x="652" y="369" font-size="11" class="sub" fill="#8B82A8" text-anchor="end">1 item</text>
+<circle cx="44" cy="394" r="3.5" fill="#38BDF8"/>
+<text x="56" y="398" font-size="13"><tspan class="nm" fill="#ffffff">Automation signal hardening </tspan><tspan class="sub" fill="#BDB6D8">— Source patches cover webdriver, canvas and WebGL</tspan></text>
+<text x="652" y="398" font-size="10.5" class="tag" fill="#7C7398" text-anchor="end">PATCHES</text>
+<line x1="28" y1="414" x2="652" y2="414" stroke="#ffffff" stroke-opacity="0.08"/>
+<rect x="28" y="430" width="4" height="20" rx="2" fill="#A78BFA"/>
+<text x="42" y="445" font-size="13.5" class="sec" fill="#A78BFA">SISTEMAS</text>
+<text x="652" y="445" font-size="11" class="sub" fill="#8B82A8" text-anchor="end">2 itens</text>
+<circle cx="44" cy="470" r="3.5" fill="#A78BFA"/>
+<text x="56" y="474" font-size="13"><tspan class="nm" fill="#ffffff">Checksum verification </tspan><tspan class="sub" fill="#BDB6D8">— Downloads are validated with SHA-256 before use</tspan></text>
+<text x="652" y="474" font-size="10.5" class="tag" fill="#7C7398" text-anchor="end">SUPPLY</text>
+<circle cx="44" cy="495" r="3.5" fill="#A78BFA"/>
+<text x="56" y="499" font-size="13"><tspan class="nm" fill="#ffffff">Package distribution </tspan><tspan class="sub" fill="#BDB6D8">— Metadata supports pip, npm, Docker and source installs</tspan></text>
+<text x="652" y="499" font-size="10.5" class="tag" fill="#7C7398" text-anchor="end">PACKAGE</text>
+<line x1="28" y1="521" x2="652" y2="521" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="28" y="539" font-size="11" class="sub" fill="#B490BA">Full notes available on GitHub Releases</text>
+<text x="652" y="539" font-size="11" class="sec" fill="#8787E7" text-anchor="end">CLOAKBROWSER</text>
+<path d="M16 539 L16 511 L44 511" fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1"/>
+<path d="M664 539 L664 511 L636 511" fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1"/>
+</svg>
